@@ -1,0 +1,14 @@
+{
+  "name": "colacks-discord-bot",
+  "version": "1.0.0",
+  "description": "A discord bot that i made for fun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Colack",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}
