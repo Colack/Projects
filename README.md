@@ -1,2 +1,2 @@
 # Projects
-:flushed: Random Projects i've created.
+:flushed: Projects I've made that don't deserve their own repository.
