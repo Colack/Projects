@@ -1,0 +1,15 @@
+{
+  "name": "dumbscript",
+  "version": "1.0.5",
+  "description": "Javascript for Dumbasses",
+  "main": "dumbscript.cjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dumbscriptjs"
+  ],
+  "author": "Colack",
+  "license": "ISC",
+  "type": "module"
+}
