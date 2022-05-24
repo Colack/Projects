@@ -4,6 +4,8 @@ int inp;
 int inp2;
 int inp3;
 int inp4;
+char dir;
+int temp;
     
 void slashN() {
     printf("\n");
@@ -82,6 +84,11 @@ void shell() {
     } else if (inp == 1) {
         // Exit the shell
     } else if (inp == 2) {
+        printf("What directory would you like to go into?\n");
+        printf(">");
+        scanf("%s",&dir);
+        printf("You want %s to be your directory. Correct? (y = 1, n = 0)");
+        scanf
         shell();
     }
 }
