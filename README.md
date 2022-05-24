@@ -20,6 +20,6 @@
 * insert text here rework - A remake of one of my friends games.
 * megaLibs - Code.org libraries
 * megaShell-Fight - A standlone version of the megaShell Fighting game, with extra features.
-* superShell - megaShell except its made with C++
+* superShell - megaShell except its made with C
 * varLoad - Achievement loader made with JavaScript.
 * varSite - Website loader/maker made with code.org.
