@@ -1,2 +1,2 @@
 # superShell
-:flushed: A distro of megaShell, written in C++.
+:flushed: A distro of megaShell, written in C.
