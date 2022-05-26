@@ -4,19 +4,40 @@
 
 var char = {
   name: "",
-  health: "",
-  level: "",
+  health: 0,
+  level: 0,
   quest2: false,
   noSound: false
 };
 
 var dataTable = {
-  c2: false
+  c2: false,
+  r2: false
 };
+
+var startText = [
+  "Why do I write games on this?",
+  "Do a pullup...",
+  "SATQTSTC was pretty fire!"
+];
+
+
 
 onEvent("Start", "click", function() {
   
-  
+  if (dataTable.c2) {
+    
+    if (char.quest2) {
+      
+      doFade("GameSelect");
+      
+    } else {
+      
+      doFade("StoryStart");
+      
+    }
+    
+  }
   
 });
 
@@ -42,7 +63,7 @@ onEvent("NoSound", "click", function() {
     
     char.noSound = false;
     
-    setText("NoSound", "Sound");
+    setText("NoSound", "Sound On");
     
   } else {
     
@@ -54,13 +75,51 @@ onEvent("NoSound", "click", function() {
   
 });
 
+onEvent("DeleteData", "click", function() {
+  
+  if (dataTable.r2) {
+    
+    resetData();
+    
+    setTimeout(onAppStart, 250);
+    
+  } else {
+    
+    dataTable.r2 = true;
+    
+    setText("DeleteData", "Are you sure?");
+    
+    setProperty("DeleteData", "background-color", "green");
+    
+  }
+  
+});
+
+
+
 function onAppStart() {
   
-  setScreen("Index");
+  setScreen("StartCredits");
   
-  setProperty("two", "text-color", rgb(255, 255, 255, 0));
+  createRandom();
   
-  setTimeout(startFade, 1000);
+  setTimeout(startStuff, 1000);
+  
+  function startStuff() {
+    
+    doFade("Index");
+  
+    setTimeout(startStuff2, 1000);
+    
+  }
+  
+  function startStuff2() {
+    
+    setProperty("two", "text-color", rgb(255, 255, 255, 0));
+  
+    setTimeout(startFade, 1000);
+    
+  }
   
   function startFade() {
     
@@ -121,5 +180,32 @@ function doFade(newScreen) {
   });
   
 }
+
+function resetData() {
+  
+  char.name = "";
+  char.health = 0;
+  char.level = 0;
+  char.quest2 = false;
+  char.noSound = false;
+  
+  dataTable.c2 = false;
+  dataTable.r2 = false;
+  
+}
+
+function createRandom() {
+  
+  var i = randomNumber(1, 10);
+  
+  if (i == 1) {
+    
+    setText("StartLabel1")
+    
+  }
+  
+}
+
+
 
 onAppStart();
