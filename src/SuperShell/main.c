@@ -85,7 +85,9 @@ void shell() {
         // Exit the shell
     } else if (inp == 2) {
         
-    }
+    } else {
+      shell();  
+    } 
 }
 
 int main()
