@@ -746,7 +746,7 @@ const fighters = [
         attack: 20,
         defense: 20,
         quote: "Mama Mia!",
-        attackQuote: "Bubble~",
+        attackQuote: "~Bubble",
         missQuote: "Damn!",
         special: () => {
 
@@ -796,6 +796,73 @@ const fighters = [
 
             });
 
+        }
+    },
+    {
+        name: "Joseph Joestar",
+        health: 125,
+        attack: 20,
+        defense: 5,
+        quote: "I will use my Hamon to defeat you!",
+        attackQuote: "Hamon... OverDrive!",
+        missQuote: "Oh My God!",
+        special: () => {
+
+            console.log("Joseph Joestar's special is ready!");
+
+            console.log("Its time for my special!");
+
+            rl.question("Press enter to continue...", (answer) => {
+                
+                clear();
+
+                console.log("A bright flash of light appears!");
+
+                console.log("Joseph's Hamon is charging!");
+
+                rl.question("Press enter to continue...", (answer) => {
+
+                    clear();
+
+                    console.log("Crazy.");
+
+                    rl.question("Press enter to continue...", (answer) => {
+
+                        console.log("My.")
+
+                        rl.question("Press enter to continue...", (answer) => {
+
+                            console.log("Beat!");
+
+                            rl.question("Press enter to continue...", (answer) => {
+
+                                let random = Math.floor(Math.random() * 10) + 1;
+
+                                let stack = 0;
+
+                                for (var i = 0; i < random; i++) {
+
+                                    console.log("Hamon Overdrive!");
+
+                                    stack += 5;
+
+                                }
+
+                                rl.question("Press enter to continue...", (answer) => {
+
+
+                                    
+                                });
+
+                            });
+
+                        });
+
+                    });
+
+                });
+            
+            });
         }
     }
 ];
