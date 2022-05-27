@@ -2,24 +2,25 @@
 > All of the projecrs are stored in the */src* directory.
 
 ## List
-* Code Aventures to the CPU - Upcoming Text based game, built with JavaScript and Batchfile.
-* CodeOS - An Operating System/Toolkit made with Code.org.
-* Colacks-Bot - Basic Discord bot I made.
-* DiscordBot - Basic Discord Bot Template.
-* Fearn - Fun learning game.
-* Logger - Logging for any JavaScript project.
-* Minecraft Pi Scripts - Python Scripts for Minecraft Pi Edition.
-* Orbital - A super fun and useful discord bot.
-* P-Grab - Grab a Github users profile picture.
-* PathFinder - A bot for creating paths, and custom text scripts.
-* SATQTSTC - My first video game, made with JavaScript and Code.org
-* Steven-Shooters - A SATQTSTC spinoff, made with KaboomJS.
-* The Number Guessing Game - A game where you guess numbers with a AI.
-* c0d3br3ak3r - A game about hacking.
-* dumbscriptjs - JavaScript package for dumbasses.
-* insert text here rework - A remake of one of my friends games.
-* megaLibs - Code.org libraries
-* megaShell-Fight - A standlone version of the megaShell Fighting game, with extra features.
-* superShell - megaShell except its made with C
-* varLoad - Achievement loader made with JavaScript.
-* varSite - Website loader/maker made with code.org.
+* C0d3br3ak3r - An Original Video game made with JavaScript and Code.org
+* C0d3br3ak3r 2 - A sequal to C0d3br3ak3r, made with JavaScript and Code.org
+* Code Adventures: To The CPU - A Video Game, designed for the Terminal, made with C.
+* CodeOS - A Operating System made with Code.org
+* Colacks-Bot - A Discord bot I made for myself.
+* DiscordBot - A Basic discord bot template.
+* DumbscriptJS - An NPM package for dumbasses.
+* Fearn - A Fun Learning Game.
+* InsertTextHere-Rework - A rework for my friends game, coded in TypeScript
+* Logger - A error logging project.
+* MegaLibs - Libraries for Code.org
+* MegaShell-Fight - The full version of the megaShell Fighting game.
+* Minecraft-Pi-Scripts - Scripts for minecraft pi edition.
+* Orbital - A Discord Bot Template.
+* P-Grab - Grab a users Github profile picture.
+* PathFinder - Create Paths and Text files for Code.org
+* SATQTSTC - An Original Video game made with JavaScript and Code.org
+* Steven-Shooters - A Spinoff of SATQTSTC made with KaboomJS.
+* SuperShell - A new Distribution of MegaShell.
+* TheNumberGuessingGame - An AI/Bot that can guess numbers. ~Somewhat broken.
+* VarLoad - A achievement loader for JavaScript.
+* VarSite - A website loader/maker for code.org
