@@ -1,7 +1,3 @@
-<p align="center">
-     <img src="https://raw.githubusercontent.com/Colack/Gold/main/src/Gold-JS/Gold-Loader/modules/images/Release/Gold-Small.png" />
-</p>
-
 <h1 align="center">Gold-Boots</h1>
 <h4 align="center">The Gold Interpreter, on the go!</h4>
 
