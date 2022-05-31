@@ -850,7 +850,31 @@ const fighters = [
 
                                 rl.question("Press enter to continue...", (answer) => {
 
+                                    if (whoFight === 1) {
 
+                                        enemieFighter.health -= stack;
+
+                                    } else {
+
+                                        currentFighter.health -= stack;
+
+                                    }
+
+                                    console.log("Joseph used his Hamon to deal " + stack + " damage!");
+
+                                    rl.question("Press enter to continue...", (answer) => {
+
+                                        if (whoFight == 0) {
+
+                                            fight(1);
+
+                                        } else {
+
+                                            fight(0);
+
+                                        }
+
+                                    });
                                     
                                 });
 
