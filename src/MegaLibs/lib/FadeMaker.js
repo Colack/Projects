@@ -35,3 +35,37 @@ function doFade(newScreen) {
   });
   
 }
+
+function doReverseFade(newScreen) {
+  
+  textInput("NEWFADE", "");
+  
+  setScreen(newScreen);
+  
+  setPosition("NEWFADE", 0, 0, 320, 450);
+  
+  setProperty("NEWFADE", "border-color", rgb(0,0,0,1));
+  setProperty("NEWFADE", "background-color", rgb(0,0,0,1));
+  setProperty("NEWFADE", "text-color", rgb(0,0,0,1));
+  
+  var i = 1;
+  
+  timedLoop(10, function() {
+    
+    i -= 0.01;
+    
+    if (i < 0) {
+      
+      stopTimedLoop();
+      
+      deleteElement("NEWFADE");
+      
+    } else {
+      
+      setProperty("NEWFADE", "background-color", rgb(0, 0, 0, i));
+      
+    }
+    
+  });
+  
+}
