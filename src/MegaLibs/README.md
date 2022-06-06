@@ -2,7 +2,7 @@
 
 # Megalibs
 
-**An list of Libraries me and my friends have written.**
+**An list of Libraries my friends and I have written.**
 
 *Includes Code so you can edit them.*
 
