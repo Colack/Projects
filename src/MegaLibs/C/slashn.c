@@ -1,0 +1,3 @@
+void slashN() {
+    printf("\n");
+}
