@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define MAX_LIMIT 20
+#define MAX_LIMIT 100
 
 int hasAppeared;
 int menu;
@@ -9,45 +9,8 @@ int num1;
 int num2;
 int ans2;
 
-void calculator() {
-    console("== Welcome to Calculator Mode! ==");
-    console("1 - Calculate");
-    console("2 - Exit");
-    scanf("%d",&answer);
-    if (answer ==1) {
-        calculate();
-    } else if (answer == 2) {
-        start();
-    } else {
-        console("Invalid Input!");
-        start();
-    }
-}
-
-void calculate() {
-    console("1st Number:");
-    scanf(%d,&num1);
-    console("2nd Number:");
-    scanf(%d,&num2);
-    int ans = num1 + num2;
-    slashN();
-    printf("%d",ans);
-    scanf(%d,&ans2);
-    if (ans2 == 1) {
-        start();
-    } else {
-        start();
-    }
-}
-
 void slashN() {
     printf("\n");
-}
-
-void clearAll() {
-    menu = 0;
-    hasAppeared = 0;
-    answer = 0;
 }
 
 void console(char str[MAX_LIMIT]) {
@@ -91,6 +54,43 @@ void start() {
         start();
     }
     
+}
+
+void calculate() {
+    console("1st Number: ");
+    scanf(%d,&num1);
+    console("2nd Number: ");
+    scanf(%d,&num2);
+    int ans = num1 + num2;
+    slashN();
+    printf("%d",ans);
+    scanf(%d,&ans2);
+    if (ans2 == 1) {
+        start();
+    } else {
+        start();
+    }
+}
+
+void calculator() {
+    console("== Welcome to Calculator Mode! ==");
+    console("1 - Calculate");
+    console("2 - Exit");
+    scanf("%d",&answer);
+    if (answer ==1) {
+        calculate();
+    } else if (answer == 2) {
+        start();
+    } else {
+        console("Invalid Input!");
+        start();
+    }
+}
+
+void clearAll() {
+    menu = 0;
+    hasAppeared = 0;
+    answer = 0;
 }
 
 int main()
