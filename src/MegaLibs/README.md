@@ -2,7 +2,7 @@
 
 # Megalibs
 
-**An List of Code.org Libraries.**
+**An list of Libraries me and my friends have written.**
 
 *Includes Code so you can edit them.*
 
@@ -13,3 +13,5 @@
 
 - **Colack**
 - **TheMilkMan**
+- **Hero333**
+- **Cardinal**
