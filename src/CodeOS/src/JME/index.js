@@ -105,3 +105,92 @@ function SWEEP() {
   }
 }
 SWEEP();
+
+var data = {
+  a: undefined,
+  b: undefined,
+  c: undefined,
+  d: undefined,
+  e: undefined,
+  f: undefined,
+  g: undefined,
+  h: undefined,
+  i: undefined,
+  j: undefined,
+  k: undefined,
+  l: undefined,
+  m: undefined,
+  n: undefined,
+  o: undefined,
+  p: undefined,
+  q: undefined,
+  r: undefined,
+  s: undefined,
+  t: undefined,
+  u: undefined,
+  v: undefined,
+  w: undefined,
+  x: undefined,
+  y: undefined,
+  z: undefined
+};
+
+var screenData = {
+  a: undefined,
+  b: undefined,
+  c: undefined,
+  d: undefined,
+  e: undefined,
+  f: undefined,
+  g: undefined,
+  h: undefined,
+  i: undefined,
+  j: undefined,
+  k: undefined,
+  l: undefined,
+  m: undefined,
+  n: undefined,
+  o: undefined,
+  p: undefined,
+  q: undefined,
+  r: undefined,
+  s: undefined,
+  t: undefined,
+  u: undefined,
+  v: undefined,
+  w: undefined,
+  x: undefined,
+  y: undefined,
+  z: undefined
+};
+
+// Load up the OS, then ask for input.
+function onAppStart() {
+  data.a = getUserId();
+  readRecords("Accounts", {userid: getUserId()}, function(rec) {
+    if (rec.length > 0) {
+      data.a = rec.code;
+      makeDesign(2, "textInput", "Your Pin Goes here...", 70, 200);
+    } else {
+      makeDesign(2, "textInput", "Your Pin Goes here...", 70, 200);
+      makeDesign(1, "submit", "Submit", 125, 250);
+    }
+  });
+}
+
+function restoreVar(variable) {
+  variable = undefined;
+}
+
+// Create a new Element from the Design board.
+function makeDesign(input, input2, input3, xVal, yVal, widthVal, heightVal) {
+  if (input == 1) {
+    button(input2, input3);
+    setPosition(input2, xVal, yVal, widthVal, heightVal);
+  } else if (input == 2) {
+    textInput(input2, input3);
+    setPosition(input2, xVal, yVal, widthVal, heightVal);
+  }
+}
+
+onAppStart();
