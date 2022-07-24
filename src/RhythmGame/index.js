@@ -156,6 +156,6 @@ function createType() {
   }
 }
 function start() {
-  playSound("Jimmy_Eat_World_-_The_Middle_-_Lyri_(getmp3.pro)-(1).mp3");
+  
 }
 start();
