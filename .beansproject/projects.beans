@@ -1,0 +1,6 @@
+Beans!
+: Projects README
+header Projects
+wait 0.5
+print This is just a repository of Small projects I have made.
+print These can include backups, remakes, etc.
