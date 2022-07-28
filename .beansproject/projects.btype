@@ -1,0 +1,9 @@
+Btype!
+title Projects
+author Colack
+manager Colack
+description Repository full of small projects.
+version 1.0
+keywords projects
+main ./src
+end
